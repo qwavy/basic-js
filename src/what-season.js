@@ -17,7 +17,7 @@ function getSeason(date) {
   }
 
   try {
-    date.toISOString();
+    date.getUTCDate();
   } catch (e) {
     throw new Error("Invalid date!");
   }
