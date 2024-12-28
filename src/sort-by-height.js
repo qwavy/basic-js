@@ -20,7 +20,6 @@ function sortByHeight(arr) {
   }
 
   const arrWihtoutMinus = arr.filter((number) => number !== -1).sort((a, b) => a - b)
-  console.log(indexesOfMinus)
 
   indexesOfMinus.forEach((index) => {
     arrWihtoutMinus.splice(index, 0, -1)
